@@ -1,5 +1,8 @@
-import {AppBar, Toolbar, Typography, List, ListItemText, ListItem, Link} from '@material-ui/core';
+import {AppBar, Toolbar, Typography, List, ListItemText, ListItem, Link, IconButton} from '@material-ui/core';
 import {makeStyles} from '@material-ui/core/styles';
+import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
+import NotificationsIcon from '@material-ui/icons/Notifications';
+import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 
 const useStyle = makeStyles({
 	root: {
@@ -8,6 +11,10 @@ const useStyle = makeStyles({
 	},
 	margin : {
 		marginLeft: '25px'
+	},
+	styleIcon : {
+		position:'absolute',
+		right:'40px'
 	}
 })
 
@@ -34,6 +41,17 @@ function Navbar() {
 							})}
 						</ListItem>
 					</List>
+					<div className={classes.styleIcon}>
+						<IconButton color="inherit">
+							<ShoppingCartIcon />
+						</IconButton>
+						<IconButton color="inherit">
+							<NotificationsIcon />
+						</IconButton>
+						<IconButton color="inherit">
+							<AccountCircleIcon />
+						</IconButton>
+					</div>
 			</Toolbar>
 		</AppBar>
 	)
