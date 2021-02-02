@@ -3,22 +3,28 @@ import {makeStyles} from '@material-ui/core/styles';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
+import Sidebar from './Sidebar';
 
-const useStyle = makeStyles({
+const useStyle = makeStyles((theme) => ({
 	root: {
 		boxShadow:'none',
-		backgroundColor:'#2196F3'
+		backgroundColor:'#2196F3',
 	},
 	margin : {
 		marginLeft: '25px'
 	},
 	styleIcon : {
 		position:'absolute',
-		right:'40px'
+		right:'4em'
+	},
+	hideList : {
+		[theme.breakpoints.down('sm')] : {
+			display:'none'
+		}
 	}
-})
+}))
 
-const lists = [
+export const lists = [
 	{item : 'Home', link:'/'},
 	{item : 'Product', link:'/Product'},
 	{item : 'Popular', link:'/Popular'},
@@ -29,10 +35,10 @@ const lists = [
 function Navbar() {
 	const classes = useStyle()
 	return(
-		<AppBar className={classes.root} position="relative">
+		<AppBar className={classes.root} >
 			<Toolbar>
 				<Typography variant="h4"> Logo </Typography>
-					<List>
+					<List className={classes.hideList}>
 						<ListItem>
 							{lists.map((list,index) => {
 								return (
@@ -52,6 +58,7 @@ function Navbar() {
 							<AccountCircleIcon />
 						</IconButton>
 					</div>
+					<Sidebar />
 			</Toolbar>
 		</AppBar>
 	)
