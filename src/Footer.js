@@ -22,7 +22,7 @@ const listReference = [
 	{name: 'Illustration', link: 'https://www.manypixels.co/gallery'},
 	{name: 'Font', link: 'https://github.com/fontsource/fontsource/blob/master/packages/roboto/README.md'},
 	{name: 'Reference', link : 'https://pinterest.com/'},
-	{name: 'Icon', Link: 'https://material-ui.com/components/material-icons/'}
+	{name: 'Icon', link: 'https://material-ui.com/components/material-icons/'}
 ]
 
 export default function Footer() {
