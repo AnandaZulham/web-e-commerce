@@ -3,6 +3,7 @@ import Navbar from './Navbar';
 import Header from './Header';
 import ProductCategory from './ProductCategory';
 import Features from './Features'
+import Footer from './Footer'
 import 'fontsource-roboto';
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <Header />
       <ProductCategory />
       <Features />
+      <Footer />
     </div>
   );
 }
