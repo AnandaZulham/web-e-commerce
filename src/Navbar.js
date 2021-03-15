@@ -15,13 +15,15 @@ const useStyle = makeStyles((theme) => ({
 	},
 	styleIcon : {
 		position:'absolute',
-		right:'4em'
+		right:'4em',
+		display:'flex',
+		height:'40px'
 	},
 	hideList : {
 		[theme.breakpoints.down('sm')] : {
 			display:'none'
 		}
-	}
+	},
 }))
 
 export const lists = [
