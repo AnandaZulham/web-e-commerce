@@ -1,4 +1,3 @@
-import './App.css';
 import Navbar from './Navbar';
 import Header from './Header';
 import ProductCategory from './ProductCategory';
