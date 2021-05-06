@@ -59,7 +59,7 @@ export default function Footer() {
 						</Grid>
 					</Grid>
 					<div>
-						<Typography variant="body1" align="center" className={classes.styleFooter}>Thanks To <Link color="inherit" underline="always" href="www.material-ui.com">Material-UI</Link></Typography>
+						<Typography variant="body1" align="center" className={classes.styleFooter}>Built With <Link color="inherit" underline="always" href="www.material-ui.com">Material-UI</Link></Typography>
 					</div>
         </div>
     )
