@@ -38,7 +38,7 @@ export const lists = [
 
 function Navbar() {
 	const classes = useStyle()
-	const {state, setState} = useContext(MyContext)
+	const {state} = useContext(MyContext)
 	return(
 		<AppBar className={classes.root} >
 			<Toolbar>
