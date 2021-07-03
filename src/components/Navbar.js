@@ -5,7 +5,7 @@ import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import Sidebar from './Sidebar';
-import {MyContext} from './context/MyContext';
+import {MyContext} from '../context/MyContext';
 
 const useStyle = makeStyles((theme) => ({
 	root: {

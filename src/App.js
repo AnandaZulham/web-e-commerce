@@ -1,9 +1,9 @@
 import {useState} from 'react'
-import Navbar from './Navbar';
-import Header from './Header';
-import ProductCategory from './ProductCategory';
-import Features from './Features'
-import Footer from './Footer'
+import Navbar from './components/Navbar';
+import Header from './components/Header';
+import ProductCategory from './components/ProductCategory';
+import Features from './components/Features'
+import Footer from './components/Footer'
 import 'fontsource-roboto';
 import {MyContext} from './context/MyContext';
 
