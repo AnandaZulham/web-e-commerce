@@ -1,23 +1,22 @@
 import {useState} from 'react'
+import {BrowserRouter, Switch, Route} from 'react-router-dom'
 import Navbar from './components/Navbar';
-import Header from './components/Header';
-import ProductCategory from './components/ProductCategory';
-import Features from './components/Features'
-import Footer from './components/Footer'
-import 'fontsource-roboto';
-import {MyContext} from './context/MyContext';
+import Home from './Home'
+import {MyContext} from './context/MyContext'
 
 function App() {
   const [state, setState] = useState(0)
   return (
     <div>
-	 <MyContext.Provider value={{state, setState}}>
-      <Navbar />
-      <Header />
-      <ProductCategory />
-      <Features />
-      <Footer />
-     </MyContext.Provider>
+     <BrowserRouter>
+      <MyContext.Provider value={{state, setState}}>
+	<Navbar />
+
+	<Switch>
+	  <Route exact path="/" component={Home} />
+	</Switch>
+      </MyContext.Provider>
+     </BrowserRouter>
     </div>
   );
 }
