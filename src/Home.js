@@ -1,4 +1,3 @@
-import {useState} from 'react'
 import Header from './components/Header';
 import ProductCategory from './components/ProductCategory';
 import Features from './components/Features'
