@@ -2,6 +2,7 @@ import {useState} from 'react'
 import {BrowserRouter, Switch, Route} from 'react-router-dom'
 import Navbar from './components/Navbar';
 import Home from './Home'
+import AllProduct from './components/AllProduct'
 import {MyContext} from './context/MyContext'
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
 
 	<Switch>
 	  <Route exact path="/" component={Home} />
+	  <Route path="/product" component={AllProduct} />
 	</Switch>
       </MyContext.Provider>
      </BrowserRouter>
