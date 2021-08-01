@@ -6,6 +6,7 @@ import NotificationsIcon from '@material-ui/icons/Notifications';
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import Sidebar from './Sidebar';
 import {MyContext} from '../context/MyContext';
+import {Link as RouterLink} from 'react-router-dom';
 
 const useStyle = makeStyles((theme) => ({
 	root: {
@@ -47,7 +48,7 @@ function Navbar() {
 						<ListItem>
 							{lists.map((list,index) => {
 								return (
-								<Link href={list.link} color="inherit" key={index} underline="none" className={classes.margin}><ListItemText primary={list.item} ></ListItemText></Link>
+								<Link component={RouterLink} to={list.link} color="inherit" key={index} underline="none" className={classes.margin}><ListItemText primary={list.item}></ListItemText></Link>
 								)
 							})}
 						</ListItem>
