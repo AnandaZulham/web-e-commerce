@@ -8,9 +8,5 @@ export const BlueButton = withStyles({
 		borderRadius:'50px',
 		fontWeight:'bold',
 		color:'#2196F3',
-		'&:hover': {
-			backgroundColor:'#2196F3',
-			color:'white'
-		},
 	}
 })(Button)
